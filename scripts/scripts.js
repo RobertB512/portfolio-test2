@@ -85,6 +85,7 @@ backToTableBtn.addEventListener("click", () => {
 form.addEventListener("submit", (e) => {
   if (enteredName.validity.valid && enteredName.validity.valid && enteredMsg.validity.valid) {
     messageSent.textContent = "thank you"
+  } else {
     e.preventDefault()
   }
 })
